@@ -57,6 +57,6 @@ const { createProxyMiddleware } = require('http-proxy-middleware');
 
 const app = express();
 
-// app.use('/api', createProxyMiddleware({ target: 'https://api.eventmeet.xyz', changeOrigin: true }));
-app.use('/', createProxyMiddleware({ target: 'https://flutlab.io/', changeOrigin: true }));
+app.use('/api', createProxyMiddleware({ target: 'https://api.eventmeet.xyz', changeOrigin: true }));
+// app.use('/', createProxyMiddleware({ target: 'https://flutlab.io/', changeOrigin: true }));
 app.listen(3000);
